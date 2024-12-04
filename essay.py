@@ -1,5 +1,11 @@
 import re
 
+words = []
+
+with open("essay.txt", "r", encoding="utf-8") as file:
+    content = file.read()
+    words = content.split()
+print(f"Number of words: {len(words)}")
 print("Press enter every time you have finished a sentence!")
 print("--------------------------------------------------------------------------------")
 ask_for_input = True
